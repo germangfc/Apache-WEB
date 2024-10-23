@@ -1,0 +1,17 @@
+services:
+  web:
+    image: ubuntu/apache2
+    container_name: apache_server
+    ports:
+      - "8085:80"
+      - "8443:443"
+    volumes:
+      - ./conf/apache2.conf:/etc/apache2/apache2.conf
+      - ./conf/ports.conf:/etc/apache2/ports.conf
+      - ./sites-available:/etc/apache2/sites-available
+      - ./websites:/var/www/html/
+      - ./scripts:/scripts
+      - ./htpasswd/.htpasswd:/etc/apache2/.htpasswd
+      - ./certs:/etc/apache2/certs
+    restart: always
+    entrypoint: /scripts/init.sh
