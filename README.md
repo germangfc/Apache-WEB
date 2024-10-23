@@ -80,6 +80,10 @@ Dentro de la terminal del contenedor, ejecutamos el comando de Apache, situados 
 ```htpasswd -c /etc/apache2/.htpasswd german```  
 y añadiremos los datos que nos pide: como usuario nuestro nombre y como password nuestro apellido, como se indica en el enunciado.
 
+En mi caso, el comando me da un error y no me dejaba generar el archivo .htpasswd en su carpeta.
+Investigando, he generado el fichero en la carpeta /tmp y luego lo he copiado a .htpasswd:  
+<img src="./images/htpasswd_temp.png" max-width="80%">
+
 Una vez hecho esto, ya podemos probar nuestros hosts, escribiendo en nuestro navegador las siguientes direcciones:
 
 - Host nombre: http://german.com:8085
@@ -89,7 +93,7 @@ Una vez hecho esto, ya podemos probar nuestros hosts, escribiendo en nuestro nav
 - Host seguro: https://seguro.net:8443  
 <img src="./images/segurook.png" max-width="80%">
 - Carpeta privada en seguro.net: https://seguro.net:8443/privado
-<img src="./images" max-width="80%">
+<img src="./images/solicitud.png" max-width="80%">
 - Host nombre no encontrado: http://german.com:8085/notfound
 <img src="./images/germannotfound.png" max-width="80%">
 - Host apellido no encontrado: http://fernandezcarracedo.com:8085/notfound
