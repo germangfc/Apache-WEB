@@ -1,14 +1,14 @@
 ### Despliegue Web en Apache Server
 ## Objetivo
 El objetivo requerido es la creación de tres hosts virtuales en un servidor Apache dentro de un contenedor Docker. Cada host debe alojar su propia web:
-- Virtual Host 1 (nombre.com): Página con nuestro nombre, y una página con una personalización de la página de error 404 
+- Virtual Host 1 (```nombre.com```): Página con nuestro nombre, y una página con una personalización de la página de error 404 
 
-- Virtual Host 2(www.apellidos.com): Página con nuestros apellidos y personalización de la página de error 404 
+- Virtual Host 2(```www.apellidos.com```): Página con nuestros apellidos y personalización de la página de error 404 
 
-- Virtual Host 3 (https seguro.net): Página con acceso restringido y personalización de las páfinas de error: 404, 500, 401 y 403 
+- Virtual Host 3 (```https://seguro.net```): Página con acceso restringido y personalización de las páfinas de error: 404, 500, 401 y 403 
     Los datos de acceso serán: 
-    - user: tu nombre
-    - pass: tu apellido
+    - user: nuestro nombre
+    - pass: nuestro apellido
 
 ## Proceso
 1. Creamos un directorio **conf** y copiamos los ficheros de configuración apache2.conf y ports.conf. \
