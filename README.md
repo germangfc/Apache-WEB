@@ -5,7 +5,7 @@ El objetivo requerido es la creación de tres hosts virtuales en un servidor Apa
 
 - Virtual Host 2(```www.apellidos.com```): Página con nuestros apellidos y personalización de la página de error 404 
 
-- Virtual Host 3 (```https://seguro.net```): Página con acceso restringido y personalización de las páfinas de error: 404, 500, 401 y 403 
+- Virtual Host 3 (```https://seguro.net```): Página con acceso restringido y personalización de las páginas de error: 404, 500, 401 y 403 
     Los datos de acceso serán: 
     - user: nuestro nombre
     - pass: nuestro apellido
